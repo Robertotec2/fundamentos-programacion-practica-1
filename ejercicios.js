@@ -17,7 +17,7 @@ function miInformacion() {
   
   const nombre = "Roberto Balmes";
   const edad = 19;
-  const carrera = " TSU en Desarrollo de Software";
+  const carrera = " TSU";
   
   return { nombre, edad, carrera };
 }
@@ -47,6 +47,7 @@ function operacionesBasicas(a, b) {
  */
 function areaRectangulo(base, altura) {
   // TODO: Calcula y retorna el Ã¡rea (base * altura)
+  base * altura;
   return 0;
 }
 
@@ -59,6 +60,7 @@ function areaRectangulo(base, altura) {
  */
 function celsiusAFahrenheit(celsius) {
   // TODO: Implementa la conversiÃ³n
+  F = celsius * 9/5 + 32; 
   return 0;
 }
 
@@ -74,6 +76,7 @@ function celsiusAFahrenheit(celsius) {
 function parOImpar(numero) {
   // TODO: Usa el operador % (mÃ³dulo) para determinar si es par o impar
   // Pista: Un nÃºmero es par si numero % 2 === 0
+  numero % 2 === 0 ? "par" : "impar";
   return "";
 }
 
@@ -84,6 +87,11 @@ function parOImpar(numero) {
  */
 function evaluarNota(nota) {
   // TODO: Implementa la lÃ³gica con if/else
+  if (nota >= 60) {
+    return "Aprobado";
+  } else {
+    return "Reprobado";
+  }   
   return "";
 }
 
@@ -96,6 +104,13 @@ function evaluarNota(nota) {
  */
 function mayorDeTres(a, b, c) {
   // TODO: Encuentra y retorna el mayor de los tres nÃºmeros
+  if (a >= b && a >= c) {
+    return a;
+  } else if (b >= a && b >= c) {
+    return b;
+  } else {
+    return c;
+  } 
   return 0;
 }
 
@@ -106,6 +121,13 @@ function mayorDeTres(a, b, c) {
  */
 function clasificarEdad(edad) {
   // TODO: Implementa la clasificaciÃ³n con if/else if/else
+  if (edad >= 0 && edad <= 17) {
+    return "menor";
+  } else if (edad >= 18 && edad <= 64) {
+    return "adulto";
+  } else if (edad >= 65) {
+    return "mayor";
+  } 
   return "";
 }
 
